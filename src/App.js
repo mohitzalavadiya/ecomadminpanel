@@ -1,6 +1,6 @@
-import Layout from "./container/layout/Layout";
+import Layout from "./component/layout/Layout";
 import {Route, Switch} from 'react-router-dom'
-import Product from "./component/product/Product";
+import Product from "./container/product/Product";
 
 
 function App() {

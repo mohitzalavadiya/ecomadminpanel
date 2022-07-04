@@ -18,6 +18,7 @@ function Product(props) {
     const [open, setOpen] = React.useState(false);
     const [data, setData] = useState([]);
     const [deldata, setDeldata] = useState([]);
+    const [alertopen, setAlertOpen] = React.useState(false);
     const [update, setUpdate] = useState(false)
 
     const handleClickOpen = () => {
@@ -27,8 +28,8 @@ function Product(props) {
     const handleClose = () => {
         setOpen(false);
        formik.resetForm()
+       setUpdate(false)
     };
-    const [alertopen, setAlertOpen] = React.useState(false);
 
     const handlealertOpen = () => {
         setAlertOpen(true);
